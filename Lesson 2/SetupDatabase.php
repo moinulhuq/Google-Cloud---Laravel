@@ -37,21 +37,21 @@ Step 08: After that run the database migrations for Laravel using the following 
 	php artisan session:table
 	php artisan migrate --force
 
-Step 09: Then get the databse dump from phpmyadmin and save it for later step
+Step 09: Then get the database dump from phpMyAdmin and save it for later step
 
 Step 10: Click on the 'Instance' name from
 
 	https://console.cloud.google.com/sql/instances
 
-Select database tab to see wheter the 'laravel' databse created or not
+Select database tab to see whether the 'Laravel' database created or not
 
-Step 11: If created then goto
+Step 11: If created then go to
 
 	https://console.cloud.google.com/storage
 
 Select YOUR_PROJECT_NAME.appspot.com and then click on 'Upload files' to upload your database dump file to that bucket
 
-Step 12: Goto your 'Instance' page again and select your instance name from 
+Step 12: Go to your 'Instance' page again and select your instance name from 
 
 	https://console.cloud.google.com/sql/instances
 
