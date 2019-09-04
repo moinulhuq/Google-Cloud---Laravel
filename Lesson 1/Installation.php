@@ -6,11 +6,7 @@ Step 01: Create a project in the Google Cloud Platform Console.
 
 Step 02: Enable billing for your project (Do it by yourself).
 
-Step 03: Download and Install Google Cloud SDK.
-	
-	https://cloud.google.com/sdk/docs/quickstart-windows
-
-Step 04: Install Laravel in your local PC.
+Step 03: Install Laravel in your local PC.
 
 	A) To install laravel you required "Composer" dependency manager. Get it and install it
 
@@ -34,12 +30,11 @@ Step 04: Install Laravel in your local PC.
 
 	F) Visit http://localhost:8000 to see the Laravel Welcome page locally.
 
-Step 05: Create 'app.yaml' in the root directory of Laravel project.
+Step 04: Create 'app.yaml' in the root directory of Laravel project.
 
 	app.yaml
 	--------
 	runtime: php72
-
 	env_variables:
 	  ## Put production environment variables here.
 	  APP_KEY: YOUR_APP_KEY
@@ -49,10 +44,9 @@ Step 05: Create 'app.yaml' in the root directory of Laravel project.
 
 	You can find your YOUR_APP_KEY at '.env' file
 
-Step 06: Right after that go and modify bootstrap/app.php by adding the following block of code before the return statement. This will allow you to set the storage path to /tmp for caching in production.
+Step 05: Right after that go and modify bootstrap/app.php by adding the following block of code before the return statement. This will allow you to set the storage path to /tmp for caching in production.
 
 	# [START] Add the following block to `bootstrap/app.php`
-
 	/*
 	|--------------------------------------------------------------------------
 	| Set Storage Path
@@ -68,10 +62,12 @@ Step 06: Right after that go and modify bootstrap/app.php by adding the followin
 
 	# [END]
 
-
-Step 07: Finally, remove the beyondcode/laravel-dump-server composer dependency. This is a fix for an error which happens as a result of Laravel's caching in bootstrap/cache/services.php.
-
+Step 06: Finally, remove the beyondcode/laravel-dump-server composer dependency. This is a fix for an error which happens as a result of Laravel's caching in bootstrap/cache/services.php.
 	composer remove --dev beyondcode/laravel-dump-server
+
+Step 07: Download and Install Google Cloud SDK.
+	
+	https://cloud.google.com/sdk/docs/quickstart-windows
 
 Step 08: Run the following command form your root directory to deploy your app:
 
